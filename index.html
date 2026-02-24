@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Draykyl — Développeur Web & Cybersécurité</title>
+  <meta name="description" content="Draykyl — Développeur Web HTML/CSS/JS & étudiant en cybersécurité. Sites modernes, rapides et propres avec bonnes pratiques de sécurité." />
+
+  <!-- SEO basique -->
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://TON-URL-NETLIFY.netlify.app" />
+
+  <!-- Open Graph / Social preview -->
+  <meta property="og:title" content="Draykyl — Développeur Web & Cybersécurité" />
+  <meta property="og:description" content="Sites modernes, rapides et propres avec bonnes pratiques de sécurité. Disponible en freelance." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://TON-URL-NETLIFY.netlify.app" />
+  <meta property="og:image" content="https://TON-URL-NETLIFY.netlify.app/preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Draykyl — Développeur Web & Cybersécurité" />
+  <meta name="twitter:description" content="Sites modernes, rapides et propres avec bonnes pratiques de sécurité. Disponible en freelance." />
+  <meta name="twitter:image" content="https://TON-URL-NETLIFY.netlify.app/preview.png" />
+
+  <!-- Favicon (optionnel mais pro) -->
+  <link rel="icon" href="/favicon.png" />
+
+  <!-- Performance hints (optionnel) -->
+  <meta name="theme-color" content="#0b1020" />
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#11172a;
+      --muted:#aab1d6;
+      --text:#eaf0ff;
+      --accent:#6cf2c2;
+      --border:rgba(255,255,255,.08);
+      --radius:16px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:28px 18px}
+    .btn{display:inline-block;background:linear-gradient(135deg,#6cf2c2,#6cc4f2);color:#081116;
+      padding:12px 18px;border-radius:12px;font-weight:800}
+    .chip{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:6px 10px;color:var(--muted)}
+    header{padding-top:64px}
+    .hero{display:grid;grid-template-columns:1fr;gap:16px}
+    .hero h1{font-size:42px;line-height:1.1}
+    .hero p{color:var(--muted);max-width:760px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+    .card{grid-column:span 12;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px}
+    h2{margin:26px 0 10px;font-size:26px}
+    h3{margin-bottom:6px}
+    .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+    .kpi{background:linear-gradient(180deg,rgba(108,242,194,.08),transparent);border:1px solid var(--border);border-radius:14px;padding:12px}
+    .list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+    .proj{display:grid;gap:8px}
+    .meta{color:var(--muted);font-size:14px}
+    .tag{display:inline-block;background:rgba(108,242,194,.12);border:1px solid rgba(108,242,194,.35);
+      color:#bff7e3;border-radius:999px;padding:4px 8px;font-size:12px;margin-right:6px}
+    footer{border-top:1px solid var(--border);margin-top:36px;color:var(--muted)}
+    .reveal{opacity:0;transform:translateY(10px);transition:.6s ease}
+    .reveal.show{opacity:1;transform:none}
+    @media (min-width: 820px){
+      .hero{grid-template-columns:7fr 5fr}
+      .card.half{grid-column:span 6}
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <div class="hero reveal">
+      <div>
+        <span class="chip">Disponible en freelance</span>
+        <h1>Draykyl — Développeur Web & Cybersécurité</h1>
+        <p>
+          Je conçois des sites web modernes, rapides et propres, avec une attention particulière
+          à la sécurité et aux bonnes pratiques. Objectif : des solutions efficaces, pas du code inutile.
+        </p>
+        <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" href="#contact">Me contacter</a>
+          <span class="chip">HTML • CSS • JavaScript • C • Windows</span>
+        </div>
+      </div>
+      <div class="card">
+        <strong>Positionnement</strong>
+        <p class="meta">
+          Profil hybride : développement web + sensibilité sécurité.  
+          Idéal pour les petits business qui veulent un site pro sans se prendre la tête.
+        </p>
+        <div class="kpis" style="margin-top:10px">
+          <div class="kpi"><strong>Rapide</strong><br><span class="meta">Délais courts</span></div>
+          <div class="kpi"><strong>Propre</strong><br><span class="meta">Code maintenable</span></div>
+          <div class="kpi"><strong>Sûr</strong><br><span class="meta">Bonnes pratiques</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="reveal">
+      <h2>Services</h2>
+      <div class="list">
+        <div class="card">
+          <h3>Sites modernes & performants</h3>
+          <p class="meta">Vitrines, landing pages, pages responsive.</p>
+        </div>
+        <div class="card">
+          <h3>Corrections & optimisations</h3>
+          <p class="meta">Bugs HTML/CSS/JS, améliorations UI.</p>
+        </div>
+        <div class="card">
+          <h3>Interactivité JS</h3>
+          <p class="meta">Mini-jeux, quiz, interfaces dynamiques.</p>
+        </div>
+        <div class="card">
+          <h3>Bonnes pratiques sécurité</h3>
+          <p class="meta">HTTPS, durcissement de base, conseils.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal">
+  <h2>Projets phares</h2>
+  <div class="list">
+
+    <!-- Projet 1 : Restaurant -->
+    <div class="card proj">
+      <strong>Bistro Nova — Site vitrine restaurant</strong>
+      <span class="meta">
+        Développement d’un site vitrine complet pour un restaurant local.  
+        Présentation du menu, horaires, formulaire de contact et design responsive.  
+        Livré avec optimisation performance et interface claire pour les clients.
+      </span>
+      <div>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Responsive</span>
+      </div>
+    </div>
+
+    <!-- Projet 2 : Coach -->
+    <div class="card proj">
+      <strong>AlexFit Coaching — Landing page</strong>
+      <span class="meta">
+        Création d’une landing page pour un coach personnel.  
+        Sections claires, mise en avant des offres et CTA visibles.  
+        Objectif atteint : plus de contacts clients et meilleure visibilité en ligne.
+      </span>
+      <div>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">UX</span>
+        <span class="tag">JavaScript</span>
+      </div>
+    </div>
+
+    <!-- Projet 3 : Mini app JS -->
+    <div class="card proj">
+      <strong>TaskFlow Mini — Application de gestion de tâches</strong>
+      <span class="meta">
+        Développement d’une mini application JS pour gérer des tâches internes.  
+        Interface intuitive, ajout/suppression de tâches et feedback utilisateur en temps réel.  
+        Livraison rapide et fonctionnelle pour améliorer la productivité.
+      </span>
+      <div>
+        <span class="tag">JavaScript</span>
+        <span class="tag">UX</span>
+        <span class="tag">Interactivité</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <section class="reveal">
+      <h2>Pourquoi me choisir</h2>
+      <div class="list">
+        <div class="card">Approche orientée solution (pas juste du code).</div>
+        <div class="card">Profil hybride dev + cybersécurité.</div>
+        <div class="card">Communication claire, délais respectés.</div>
+        <div class="card">Veille technique & bonnes pratiques.</div>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2>Contact</h2>
+      <div class="card">
+        <p class="meta">Parlons de ton projet. Je réponds sous 24h.</p>
+        <a class="btn" href="mailto:business.draykyl@gmail.com">business.draykyl@gmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>© <span id="y"></span> Draykyl — Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    const io = new IntersectionObserver(entries=>{
+      entries.forEach(e=>e.isIntersecting && e.target.classList.add("show"));
+    },{threshold:.15});
+    document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+  </script>
+</body>
+</html>
